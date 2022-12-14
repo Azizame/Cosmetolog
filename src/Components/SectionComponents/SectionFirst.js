@@ -1,6 +1,7 @@
 import Shape from "./../../img/Shape.png"
 import Shape1 from "./../../img/Shape1.png";
 import Combinad from './../../img/Combined.png';
+import { Link } from "react-router-dom";
 
 export default function SectionFirst(){
     return(
@@ -15,12 +16,14 @@ export default function SectionFirst(){
                     </div>
                     <input type="text" placeholder="+7 (___) ___ - __ -__"/> 
                 </div>
+                <Link to="/contact">
                 <div className="content_button">
                     <h4>ЗАБРОНИРОВАТЬ ВРЕМЯ</h4>
                     <div className="buttn_img">
                     <img src={Shape1} alt=""/>
                     </div>
                 </div>
+                </Link>
             </div>
             <div className="sectionTabs">
                 <span>лэшмейкер</span>

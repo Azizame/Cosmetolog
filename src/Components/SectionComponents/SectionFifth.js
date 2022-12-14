@@ -1,7 +1,7 @@
 import Shape from "./../../img/Shape.png"
 import Shape1 from "./../../img/Shape1.png";
 import Girl from "./../../img/five_girl.png"
-
+import Link from "react-router-dom";
 export default function SectionFifth(){
     return(
         <div className="section_fifth">
@@ -17,12 +17,14 @@ export default function SectionFifth(){
                             </div>
                             <input type="text" placeholder="+7 (___) ___ - __ -__"/> 
                         </div>
+                        <Link to="/contact">
                         <div className="content_button">
                             <h4>ЗАБРОНИРОВАТЬ ВРЕМЯ</h4>
                             <div className="buttn_img">
                             <img src={Shape1} alt=""/>
                             </div>
                         </div>
+                        </Link>
                         <p><input type="checkbox"/>Я согласна на обработку моих персональных данных в соответствии с условиями</p>
                         <div className="girl_img">
                             <img src={Girl} alt=""/>

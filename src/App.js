@@ -1,13 +1,18 @@
 import './App.css';
-import Header from './Components/Header';
-import Section from './Components/Section';
-import Footer from './Components/Footer'
+
+import { Route, Routes } from 'react-router-dom';
+import Main from './Main';
+import Contact from './pages/Contact';
+import Number from './pages/Number';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Section />
-      <Footer />
+      <Routes>
+        <Route exact path='/' element={<Main />} />
+        <Route path='/contact' element={<Contact />}/>
+        <Route path='/number' element={<Number />} />
+      </Routes>
+        
     </div>
   );
 }

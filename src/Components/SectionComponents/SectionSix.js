@@ -98,25 +98,34 @@ export default function SectionSix(){
                     <h1><span>УСЛОВИЯ СОТРУДНИЧЕСТВА,</span> ОПЛАТА И СОСТАЛЕНИЕ ГРАФИКОВ</h1>
                     <div className="accordion">
                         <div className="accordion_item">
-                            <p>В какую сумму мне обойдется аренда помещения на месяц?</p>
-                            <div className="icon">^</div>
+                            <label for='first'>В какую сумму мне обойдется аренда помещения на месяц?<div className="icon">^</div></label>
+                            <input type='radio' name='accordion' id='first' />
+                            <div className='content'>
+                                <p>AAAAAAA bbbbbbbbbbbbbbb ccccccccccccccccccc ddddddddddddddddd bbbbbbbbbbbbbbbbbbbbb sdvervserververvbserv sbsdrtbsrb</p>
+                            </div>
                         </div>
                         <div className="accordion_item">
-                            <p>Могу я оставлять все свои инструменты у вас?</p>
-                            <div className="icon">^</div>
+                            <label for='second'>В какую сумму мне обойдется аренда помещения на месяц?<div className="icon">^</div></label>
+                            <input type='radio' name='accordion' id='second' />
+                            <div className='content'>
+                                <p>AAAAAAA bbbbbbbbbbbbbbb ccccccccccccccccccc ddddddddddddddddd bbbbbbbbbbbbbbbbbbbbb sdvervserververvbserv sbsdrtbsrb</p>
+                            </div>
                         </div>
                         <div className="accordion_item">
-                            <p>Вдруг мои клиенты не смогут найти ваш коворкинг?</p>
-                            <div className="icon">^</div>
+                            <label for='third'>В какую сумму мне обойдется аренда помещения на месяц?<div className="icon">^</div></label>
+                            <input type='radio' name='accordion' id='third' />
+                            <div className='content'>
+                                <p>AAAAAAA bbbbbbbbbbbbbbb ccccccccccccccccccc ddddddddddddddddd bbbbbbbbbbbbbbbbbbbbb sdvervserververvbserv sbsdrtbsrb</p>
+                            </div>
                         </div>
                         <div className="accordion_item">
-                            <p>Если ли требования к минимальному количеству часов для работы в вашем коворкинге?</p>
-                            <div className="icon">^</div>
+                            <label for='fourth'>В какую сумму мне обойдется аренда помещения на месяц?<div className="icon">^</div></label>
+                            <input type='radio' name='accordion' id='fourth' />
+                            <div className='content'>
+                                <p>AAAAAAA bbbbbbbbbbbbbbb ccccccccccccccccccc ddddddddddddddddd bbbbbbbbbbbbbbbbbbbbb sdvervserververvbserv sbsdrtbsrb</p>
+                            </div>
                         </div>
-                        <div className="accordion_item">
-                            <p>Мне не очень удобно добираться в ваш коворкинг. У вас есть другие помещения?</p>
-                            <div className="icon">^</div>
-                        </div>
+                        
                         <button></button>
                     </div>
                 </div>

@@ -117,6 +117,10 @@ color: #FFFFFF;
   
   position: absolute;
 }
+.header_img img{
+  width: 580px;
+}
+
 .header .header_call .call_text {
   display: flex;
   font-size: 14px;
@@ -588,7 +592,9 @@ text-align: center;
   background: url(./img/pattern.png)no-repeat center center / cover;
   text-align: center;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+    align-items: center;
+    gap: 50px;
   justify-content: center;
 }
 .two .first_about{
@@ -1714,6 +1720,7 @@ color: #FFFFFF;
   left: 0;
 }
 .six_girl-box .girl_prev .item h1{
+ 
   width: 50px;
   margin-left: 30px;
   margin-top: 0;
@@ -1774,12 +1781,29 @@ color: #FFFFFF;
 }
 .accordion .accordion_item{
   color: #34343F;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 700px;
-  height: 100px;
+  padding: 20px 20px;
   border-bottom: 1px solid #34343F;
+}
+.accordion .accordion_item label{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion .accordion_item label + input[type='radio']{
+  display: none;
+}
+.accordion .accordion_item .content{
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.accordion .accordion_item label + input[type='radio']:checked + .content{
+  max-height: 200px;
 }
 .accordion .accordion_item .icon{
   height: 35px;
@@ -1820,4 +1844,238 @@ color: #FFFFFF;
 .footer .footer_content .contact h2 span{
   font-size: 14px;
   color: #C68B61;
+}
+
+.contact-page{
+  position: relative;
+  background: #363348;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+}
+.contact-page::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 500px;
+  background: url(./img/room_left.png)no-repeat center center / cover;
+}
+.contact-page::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 600px;
+  height: 500px;
+  background: url(./img/room_right.png)no-repeat center center / cover;
+}
+.contact h1{
+  font-family: "TenorSans";
+  width: 800px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact h1 span{
+  color: #CE946B;
+  
+}
+.contact .back {
+  padding-left: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.contact .contact_div{
+  position: relative;
+  width: 840px;
+  height: 500px;
+  background: url(./img/contact_bgg.png)no-repeat center center / cover;
+  padding: 50px 30px 30px;
+  
+}
+.contact .contact_div .contact_box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  width: 330px;
+  height: 400px;
+}
+.contact .contact_div .contact_box h2{
+  
+  text-align: center;
+  font-size: 30px;
+line-height: 32px;
+text-align: center;
+color: #34343F;
+font-weight: 500;
+width: 127px;
+}
+.contact .contact_div .contact_box p{
+
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #34343F;
+width: 250px;
+margin-top: 10px;
+}
+.contact .contact_div .contact_box .input_box{
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact .contact_div .contact_box .input_box .icon{
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(131.39deg, #EBBE9D 13.55%, #DFAB86 80.5%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+.contact .contact_div .contact_box .input_box input{
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+.contact .contact_div .contact_box button{
+  cursor: pointer;
+  width: 300px;
+  height: 90px;
+  background: linear-gradient(314.24deg, #C88C61 25.11%, #EBBE9C 88.64%);
+  box-shadow: inset 0px 0px 12px #E5B79A;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.contact .contact_div .contact_box button:hover{
+  box-shadow: 0px 0px 12px #d5a080;
+}
+.contact .contact_div .contact_box .check{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact .contact_div .contact_box .check p{
+  width: 100%;
+  text-align: start;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #C3C3C3;
+}
+.contact .contact_div .img_phone{
+  position: absolute;
+  top: 120px;
+  right: -230px;
+}
+.contact .contact_div .img_phone img{
+  width: 690px;
+  height: 400px;
+}
+
+.number-page{
+  position: relative;
+  background: #363348;
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+}
+.number-page::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 500px;
+  background: url(./img/room_left.png)no-repeat center center / cover;
+}
+.number-page::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 600px;
+  height: 500px;
+  background: url(./img/room_right.png)no-repeat center center / cover;
+}
+.number{
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.number-page .number h1{
+  font-family: "TenorSans";
+  width: 600px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.number-page .number h1 span{
+  color: #CE946B;
+}
+.number-page .number .number_div{
+  position: relative;
+  width: 840px;
+  height: 500px;
+  background: url(./img/contact_bgg.png)no-repeat center center / cover;
+  padding: 50px 30px 30px;
+} 
+
+.number-page .number .number_div{
+  padding: 30px 30px 30px 40px;
+}
+.number-page .number .number_div h2{
+  font-size: 30px;
+line-height: 32px;
+text-align: center;
+color: #313140;
+width: 400px;
+font-weight: 500;
+margin-top: 70px;
+}
+.number-page .number .number_div p{
+  font-size: 37px;
+line-height: 43px;
+letter-spacing: -1.70769px;
+color: #313140;
+width: 400px;
+text-align: center;
+font-weight: 700;
+margin: 30px 30px;
+}
+.number-page .number .number_div .img_phone{
+  position: absolute;
+  top: 187px;
+  left: -23px;
+}
+.number-page .number .number_div h3{
+  width: 190px;
+  font-size: 16px;
+line-height: 20px;
+text-align: center;
+font-weight: 500;
+margin-left: 190px;
+color: #313140;
+}
+.number-page .number .number_div .flower_img{
+  top: -60px;
+  position: absolute;
+  right: 0;
 }
