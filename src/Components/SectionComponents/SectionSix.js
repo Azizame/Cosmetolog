@@ -5,6 +5,7 @@ import Iconl from './../../img/icon_left-s.png'
 import dizlike from './../../img/dislike@4x.png'
 import Like from './../../img/like@4x.png'
 import Girl from './../../img/girl1.png'
+import { Link } from 'react-router-dom';
 
 export default function SectionSix(){
     return(
@@ -21,12 +22,15 @@ export default function SectionSix(){
                             Поняли главное:<span>нужно помогать предпринимателям становиться свободными, развиваться и зарабатывать больше.</span>  Ради этой цели за кадром трудится целая команда.
                             Общайтесь с нами — обратная связь закаляет и совершенствует.
                             </p>
+                            <Link to="/contact">
                             <div className="content_button">
                             <h4>ЗАБРОНИРОВАТЬ ВРЕМЯ</h4>
                             <div className="buttn_img">
                             <img src={Shape1} alt=""/>
                             </div>
+                            
                         </div>
+                        </Link>
                         </div>
                     </div>
                     <h1>РАССКАЗЫ МАСТЕРОВ, <span>ВЫБИРАЮЩИХ СЕБЯ</span></h1>
@@ -63,7 +67,7 @@ export default function SectionSix(){
                             <div className="about_girl">
                             <div className="job">Бровисть</div>
                             <div className="name">Марина</div>
-                            <button>Хочу так же</button><br></br>
+                            <Link to="/contact"><button>Хочу так же</button></Link><br></br>
                             <i>Присоеденяйтесь к нам и следующими в этом списке будете Вы!</i>
                             </div>
                         </div>
@@ -126,7 +130,7 @@ export default function SectionSix(){
                             </div>
                         </div>
                         
-                        <button></button>
+                        <Link to="/contact"><button></button></Link>
                     </div>
                 </div>
             </div>

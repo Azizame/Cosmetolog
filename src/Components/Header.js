@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeaderMenu from "./HeaderMenu";
 
 
@@ -17,7 +18,7 @@ export default function Header(){
                 <ul>
                     <li>О нас</li>
                     <li>Цены</li>
-                    <li>Забронировать</li>
+                    <Link to="/contact"><li>Забронировать</li></Link>
                     <li>Контакты</li>
                 </ul>
                 <div className="indicator">
